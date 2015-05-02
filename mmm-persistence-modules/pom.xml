@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>net.sf.m-m-m</groupId>
+    <artifactId>mmm-persistence</artifactId>
+    <version>dev</version>
+  </parent>
+  <artifactId>mmm-persistence-modules</artifactId>
+  <packaging>pom</packaging>
+  <name>${project.artifactId}</name>
+  <description>The actual modules of mmm-persistence.</description>
+
+  <modules>
+    <module>../mmm-persistence-api</module>
+    <module>../mmm-persistence-impl-jpa</module>
+    <module>../mmm-persistence-impl-hibernate</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- BOM of mmm-util -->
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>mmm-persistence-bom</artifactId>
+        <version>${net.sf.mmm.persistence.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>mmm-util-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  
+</project>

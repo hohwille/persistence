@@ -3,9 +3,9 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>net.sf.m-m-m</groupId>
-    <artifactId>mmm-persistence</artifactId>
+    <artifactId>mmm-persistence-modules</artifactId>
     <version>dev</version>
-    <relativePath>../pom.xml</relativePath>
+    <relativePath>../mmm-persistence-modules/pom.xml</relativePath>
   </parent>
   <artifactId>mmm-persistence-impl-hibernate</artifactId>
   <version>${net.sf.mmm.persistence.version}</version>

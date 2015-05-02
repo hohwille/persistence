@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>net.sf.m-m-m</groupId>
+    <artifactId>mmm-persistence</artifactId>
+    <version>dev</version>
+  </parent>
+  <artifactId>mmm-persistence-bom</artifactId>
+  <version>${net.sf.mmm.persistence.version}</version>
+  <packaging>pom</packaging>
+  <name>${project.artifactId}</name>
+  <description>Bill of materials (BOM) for mmm-persistence.</description>
+  <url>http://m-m-m.sourceforge.net/</url>
+
+  <properties>
+    <mmm.flatten.mode>bom</mmm.flatten.mode>
+    <org.hibernate.version>4.3.5.Final</org.hibernate.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- BOM of mmm-l10n -->
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>mmm-transaction-bom</artifactId>
+        <version>${net.sf.mmm.transaction.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-envers</artifactId>
+        <version>${org.hibernate.version}</version>
+      </dependency>
+
+      <!-- Internal dependencies -->
+      <dependency>
+        <groupId>net.sf.m-m-m</groupId>
+        <artifactId>mmm-persistence-api</artifactId>
+        <version>${net.sf.mmm.persistence.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>net.sf.m-m-m</groupId>
+        <artifactId>mmm-persistence-impl-jpa</artifactId>
+        <version>${net.sf.mmm.persistence.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>net.sf.m-m-m</groupId>
+        <artifactId>mmm-persistence-impl-hibernate</artifactId>
+        <version>${net.sf.mmm.persistence.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>
