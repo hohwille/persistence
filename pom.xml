@@ -9,7 +9,7 @@
     <relativePath>../mmm-parent/pom.xml</relativePath>
   </parent>
   <artifactId>mmm-persistence</artifactId>
-  <version>dev</version>
+  <version>dev-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>${project.artifactId}</name>
   <description>This project provides an API and base-implementations for persistence-layers (e.g. based on JPA).</description>

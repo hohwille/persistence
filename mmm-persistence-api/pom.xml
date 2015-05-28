@@ -4,7 +4,7 @@
   <parent>
     <groupId>net.sf.m-m-m</groupId>
     <artifactId>mmm-persistence-modules</artifactId>
-    <version>dev</version>
+    <version>dev-SNAPSHOT</version>
     <relativePath>../mmm-persistence-modules/pom.xml</relativePath>
   </parent>
   <artifactId>mmm-persistence-api</artifactId>

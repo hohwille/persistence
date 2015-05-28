@@ -5,7 +5,7 @@
   <parent>
     <groupId>net.sf.m-m-m</groupId>
     <artifactId>mmm-persistence</artifactId>
-    <version>dev</version>
+    <version>dev-SNAPSHOT</version>
   </parent>
   <artifactId>mmm-persistence-bom</artifactId>
   <version>${net.sf.mmm.persistence.version}</version>
