@@ -24,6 +24,12 @@
       <artifactId>spring-orm</artifactId>
     </dependency>
 
+    <dependency>
+      <groupId>net.sf.m-m-m</groupId>
+      <artifactId>mmm-util-version</artifactId>
+      <scope>test</scope>
+    </dependency>
+
     <!-- Test dependencies -->
     <dependency>
       <groupId>org.hibernate</groupId>
