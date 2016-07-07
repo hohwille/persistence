@@ -1,6 +1,13 @@
-= mmm-persistence
+= Mature Modular Meta-framework (mmm)
+
+image:https://raw.github.com/m-m-m/mmm/master/src/site/resources/images/logo.png[logo]
+
+*Welcome to the wonderful world of http://m-m-m.sourceforge.net/index.html[mmm]*
+
+== mmm-persistence
+
 Persistence infrastructure for DAOs based on JPA
 
-== Deprecated
+=== Deprecated
 This project is discontinued and not supported anymore.
 Please consider using http://projects.spring.io/spring-data-jpa/[spring-data-jpa] or https://github.com/oasp/oasp4j/tree/develop/modules/jpa[oasp4j-module-jpa] instead.
